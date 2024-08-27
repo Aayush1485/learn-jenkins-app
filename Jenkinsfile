@@ -17,5 +17,10 @@ pipeline {
                 // sh 'docker inspect -f . node:18-alpine'
             }
         }
+        stage('test') {
+            steps {
+                sh 'echo "this is a test stage"'
+            }
+        }
     }
 }
