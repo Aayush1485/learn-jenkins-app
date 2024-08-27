@@ -20,6 +20,7 @@ pipeline {
         stage('test') {
             steps {
                 sh 'echo "this is a test stage"'
+                sh 'test -f src/index.js'
             }
         }
     }
